@@ -1,24 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import bottleList from "./BottleList"
+import BottleList from './BottleList';
+
+class TestChildElement extends React.Component {
+  constructor() {
+    super()
+  }
+
+  render() {
+    return (
+      <p>this is my test class instance</p>
+    )
+  }
+}
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BottleList />
     </div>
   );
 }
