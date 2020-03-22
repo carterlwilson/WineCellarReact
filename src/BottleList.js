@@ -14,7 +14,7 @@ class BottleList extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:3000/")
+        fetch("http://localhost:5858/?username=carter")
             .then(res => res.json())
             .then(
                 (result) => {
